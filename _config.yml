@@ -1,0 +1,26 @@
+title: Ohm.codes
+email: your-email@example.com
+
+author:
+  name: ""
+  email: ""
+
+description: >
+  A blog about programming, technology and other things.
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://ohm.codes" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: omegahm
+
+# Build settings
+theme: minima
+
+header_pages:
+  - about.md
+
+minima:
+  skin: solarized
+  date_format: "%B %-d, %Y"
+
+plugins:
+  - jekyll-feed
