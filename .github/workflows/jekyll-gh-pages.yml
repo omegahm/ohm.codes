@@ -23,6 +23,7 @@ concurrency:
 
 env:
   JEKYLL_ENV: production
+  NODE_ENV: production
 
 jobs:
   # Build job
@@ -48,6 +49,7 @@ jobs:
             ${{ runner.os }}-gems-
       - name: Set up Jekyll
         run: |
+          yarn
           gem install bundler
           bundle install
       - name: Build Jekyll

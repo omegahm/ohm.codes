@@ -10,7 +10,7 @@ url: "https://ohm.codes" # the base hostname & protocol for your site, e.g. http
 
 plugins:
   - jekyll-feed
-  - jekyll-postcss
+  - jekyll-postcss-v2
   - jekyll-inline-svg
   - jekyll-redirect-from
 
@@ -18,4 +18,6 @@ feed:
   path: blog.atom
 
 postcss:
+  script: node_modules/.bin/postcss
+  config: postcss.config.js
   cache: false

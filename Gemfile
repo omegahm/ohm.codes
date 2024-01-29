@@ -8,6 +8,6 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem "jekyll-inline-svg"
   gem "jekyll-redirect-from"
-  gem "jekyll-postcss"
+  gem "jekyll-postcss-v2"
 
 end
