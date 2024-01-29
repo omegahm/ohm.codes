@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <title>{{ page.title }}</title>
+  </head>
+  <body>
+    <div class="flex flex-col min-h-screen justify-between">
+      <div class="h-2 bg-violet-500 block"></div>
+      {{ content }}
+      <div class="footer footer-center mt-10 p-10 bg-neutral text-neutral-content">
+        <nav class="grid grid-flow-col gap-4">
+          <a href="/" class="link link-hover">Home</a> | <a href="/posts" class="link link-hover">Blog posts</a> |
+          <a href="/posts.atom" class="link link-hover">RSS feed</a>
+        </nav>
+        <nav>
+          <div class="grid grid-flow-col gap-4">
+            <a href="https://github.com/omegahm" class="fill-white" target="_blank">
+              {% svg /assets/images/github.svg %}
+            </a>
+            <a href="https://linkedin.com/in/madsohm" class="fill-white" target="_blank">
+              {% svg /assets/images/linkedin.svg %}
+            </a>
+          </div>
+        </nav>
+        <aside>
+          <p>© {{ site.time | date: "%Y" }} Mads Ohm Larsen</p>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>

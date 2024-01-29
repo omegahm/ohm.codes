@@ -1,0 +1,46 @@
+---
+layout: base
+---
+
+<div class="py-16 sm:ps-2 md:ps-48 bg-white">
+  <div class="flex flex-col">
+    <div class="hero w-96 mb-12">
+      <div class="hero-content flex-col">
+        <div class="w-full mb-4">
+          <img class="avatar rounded-3xl w-32 shadow-2xl" src="/assets/images/profile-small.webp" />
+        </div>
+        <h2 class="text-2xl font-bold mb-5"> <strong>Hello!</strong> I'm Mads, software developer from Denmark 🇩🇰 </h2>
+
+        <ul class="list-none p-0 w-full">
+          <li class="mb-2">
+            <a href="https://github.com/omegahm" target="_blank" class="no-underline">
+              {% svg /assets/images/github.svg class="inline-block" %} GitHub
+            </a>
+          </li>
+
+          <li>
+            <a href="https://linkedin.com/in/madsohm" target="_blank" class="no-underline">
+              {% svg /assets/images/linkedin.svg class="inline-block" %} LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="prose ms-2 md:ms-48 mt-16 mb-4">
+  <h2>Latests posts</h2>
+</div>
+<div class="flex flex-col md:flex-row ms-2 md:ms-48">
+  {% for post in site.posts limit:3 %}
+  <a href="{{ post.url }}" class="w-11/12 md:w-3/12 block no-underline mr-2 mb-5 md:mr-5">
+    <div class="card bg-base-100 shadow-2xl border-t-4 border-t-violet-300">
+      <div class="card-body">
+        <h2 class="card-title">{{ post.title }}</h2>
+        <p class="mb-12">{{ post.summary | default: post.content | strip_html | truncatewords: 25 }}</p>
+        <p class="text-violet-400">{{ post.date | date: "%B %Y" }}</p>
+      </div>
+    </div>
+  </a>
+  {% endfor %}
+</div>

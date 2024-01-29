@@ -1,0 +1,21 @@
+---
+layout: base
+---
+
+<div class="mx-auto max-w-4xl my-16">
+  <article class="prose">
+    <h1>{{ page.title }}</h1>
+    {% if page.subtitle %}
+    <h2 class="text-gray-400 font-light -mt-6 -mb-2">{{ page.subtitle }}</h2>
+    {% endif %}
+
+    <div class="flex items-center">
+      <img class="avatar rounded-3xl w-16 shadow-2xl" src="/assets/images/profile-small.webp" />
+      <div class="ms-4">
+        <div class="text-xl font-bold">Mads Ohm Larsen</div>
+        <div class="text-violet-400">{{ page.date | date: "%B %Y" }}</div>
+      </div>
+    </div>
+    {{ content }}
+  </article>
+</div>
