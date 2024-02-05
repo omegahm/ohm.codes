@@ -38,11 +38,11 @@ title: "Ohm.codes"
 <div class="flex flex-col md:flex-row ms-2 md:ms-48">
   {% for post in site.posts limit:3 %}
   <a href="{{ post.url }}" class="w-11/12 md:w-3/12 block no-underline mr-2 mb-5 md:mr-5">
-    <div class="card bg-base-100 shadow-2xl border-t-4 border-t-violet-300">
+    <div class="card bg-base-100 shadow-2xl border-t-4 border-t-violet-300 min-h-full">
       <div class="card-body">
         <h2 class="card-title">{{ post.title }}</h2>
         <p class="mb-12">{{ post.summary | default: post.content | strip_html | truncatewords: 25 }}</p>
-        <p class="text-violet-400">{{ post.date | date: "%B %Y" }}</p>
+        <p class="text-violet-400 absolute bottom-8">{{ post.date | date: "%B %Y" }}</p>
       </div>
     </div>
   </a>
