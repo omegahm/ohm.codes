@@ -5,9 +5,9 @@ gem "webrick", "~> 1.8"
 
 
 group :jekyll_plugins do
+  gem "jekyll-compose"
   gem "jekyll-feed", "~> 0.12"
   gem "jekyll-inline-svg"
   gem "jekyll-redirect-from"
   gem "jekyll-postcss-v2"
-
 end
