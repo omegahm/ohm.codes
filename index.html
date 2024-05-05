@@ -17,13 +17,21 @@ title: "Ohm.codes"
 
         <ul class="list-none p-0 w-full">
           <li class="mb-2">
-            <a href="https://github.com/omegahm" target="_blank" class="no-underline">
+            <a
+              href="https://github.com/omegahm"
+              target="_blank"
+              class="no-underline hover:fill-violet-500 hover:text-violet-500"
+            >
               {% svg /assets/images/github.svg class="inline-block" %} GitHub
             </a>
           </li>
 
           <li>
-            <a href="https://linkedin.com/in/madsohm" target="_blank" class="no-underline">
+            <a
+              href="https://linkedin.com/in/madsohm"
+              target="_blank"
+              class="no-underline hover:fill-violet-500 hover:text-violet-500"
+            >
               {% svg /assets/images/linkedin.svg class="inline-block" %} LinkedIn
             </a>
           </li>
@@ -37,12 +45,15 @@ title: "Ohm.codes"
 </div>
 <div class="flex flex-col md:flex-row ms-2 md:ms-48">
   {% for post in site.posts limit:3 %}
-  <a href="{{ post.url }}" class="w-11/12 md:w-3/12 block no-underline mr-2 mb-5 md:mr-5">
+  <a
+    href="{{ post.url }}"
+    class="w-11/12 md:w-3/12 block no-underline mr-2 mb-5 md:mr-5 hover:-translate-y-2 transition-transform"
+  >
     <div class="card bg-base-100 shadow-2xl border-t-4 border-t-violet-300 min-h-full">
       <div class="card-body">
         <h2 class="card-title">{{ post.title }}</h2>
         <p class="mb-12">{{ post.summary | default: post.content | strip_html | truncatewords: 25 }}</p>
-        <p class="text-violet-400 absolute bottom-8">{{ post.date | date: "%B %Y" }}</p>
+        <p class="text-violet-500 absolute bottom-8">{{ post.date | date: "%B %Y" }}</p>
       </div>
     </div>
   </a>
