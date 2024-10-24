@@ -3,12 +3,12 @@ layout: base
 title: "Ohm.codes"
 ---
 
-<div class="py-16 sm:ps-2 md:ps-48 bg-white">
+<div class="py-12 sm:ps-2 md:ps-48 bg-white">
   <div class="flex flex-col">
-    <div class="hero w-full md:w-5/12 mb-12">
+    <div class="hero w-full md:w-5/12 mb-3">
       <div class="hero-content flex-col">
         <div class="w-full mb-4">
-          <img class="avatar rounded-3xl w-32 shadow-2xl" src="/assets/images/profile-small.png" />
+          <img class="avatar rounded-3xl w-48 shadow-2xl" src="/assets/images/profile-small.png" />
         </div>
         <h2 class="text-2xl font-bold mb-5">
           <strong>Hello! 👋🏻</strong>
@@ -40,9 +40,11 @@ title: "Ohm.codes"
     </div>
   </div>
 </div>
+
 <div class="prose ms-2 md:ms-48 mt-16 mb-4">
   <h2>Latests posts</h2>
 </div>
+
 <div class="flex flex-col md:flex-row ms-2 md:ms-48">
   {% for post in site.posts limit:3 %}
   <a

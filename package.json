@@ -1,15 +1,14 @@
 {
-	"dependencies": {
-		"postcss": "^8.4.33",
-		"postcss-cli": "^11.0.0",
-		"postcss-import": "^16.0.0",
-		"yarn": "^1.22.21",
-		"@tailwindcss/typography": "^0.5.10",
-		"autoprefixer": "^10.4.17",
-		"cssnano": "^6.0.3",
-		"daisyui": "^4.6.0",
-		"tailwindcss": "^3.4.1"
-	},
-	"devDependencies": {
-	}
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.10",
+    "autoprefixer": "^10.4.17",
+    "cssnano": "^6.0.3",
+    "daisyui": "^4.12.13",
+    "postcss": "^8.4.33",
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.0.0",
+    "tailwindcss": "^3.4.1",
+    "yarn": "^1.22.21"
+  },
+  "devDependencies": {}
 }
