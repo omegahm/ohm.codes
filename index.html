@@ -8,19 +8,22 @@ title: "Ohm.codes"
     <div class="hero w-full md:w-5/12 mb-3">
       <div class="hero-content flex-col">
         <div class="w-full mb-4">
-          <img class="avatar rounded-3xl w-48 shadow-2xl" src="/assets/images/profile-small.png" />
+          <img
+            class="avatar rounded-3xl w-48 shadow-2xl hover:w-52 hover:-m-2 hover:rotate-6 transition-all"
+            src="/assets/images/profile-small.png"
+          />
         </div>
         <h2 class="text-2xl font-bold mb-5">
           <strong>Hello! 👋🏻</strong>
           <span class="font-extralight">I'm Mads Ohm, computer science PhD and software developer from Denmark 🇩🇰</span>
         </h2>
 
-        <ul class="list-none p-0 w-full">
+        <ul class="list-none p-0 place-self-start">
           <li class="mb-2">
             <a
               href="https://github.com/omegahm"
               target="_blank"
-              class="no-underline hover:fill-violet-500 hover:text-violet-500"
+              class="btn w-full justify-start no-underline hover:bg-violet-500 hover:fill-white hover:text-white"
             >
               {% svg /assets/images/github.svg class="inline-block" %} GitHub
             </a>
@@ -30,7 +33,7 @@ title: "Ohm.codes"
             <a
               href="https://linkedin.com/in/madsohm"
               target="_blank"
-              class="no-underline hover:fill-violet-500 hover:text-violet-500"
+              class="btn w-full no-underline hover:bg-violet-500 hover:fill-white hover:text-white"
             >
               {% svg /assets/images/linkedin.svg class="inline-block" %} LinkedIn
             </a>
