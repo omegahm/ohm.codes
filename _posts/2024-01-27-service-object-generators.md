@@ -169,7 +169,7 @@ $ bin/rails generate service_object shipping_cost calculate cart destination shi
 class ShippingCost
   class << self
     def calculate(cart, destination, shipping_method)
-      new(cart, destination, shipping_method).cart
+      new(cart, destination, shipping_method).calculate
     end
   end
 
